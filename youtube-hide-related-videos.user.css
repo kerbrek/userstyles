@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YouTube: Hide related videos
 @namespace      github.com/kerbrek/userstyles
-@version        1.0.0
+@version        1.0.1
 @homepageURL    https://github.com/kerbrek/userstyles
 @updateURL      https://raw.githubusercontent.com/kerbrek/userstyles/main/youtube-hide-related-videos.user.css
 @author         kerbrek
@@ -12,7 +12,7 @@
 @-moz-document url-prefix("https://www.youtube.com/watch"),
                url-prefix("https://www.youtube.com/embed/"),
                url-prefix("https://www.youtube-nocookie.com/embed/") {
-  .videowall-endscreen, .ytp-pause-overlay { display: none !important; }
+  .videowall-endscreen, .ytp-ce-element, .ytp-pause-overlay { display: none !important; }
 }
 
 /* Youtube Home page */
