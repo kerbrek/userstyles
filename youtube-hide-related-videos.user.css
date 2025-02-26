@@ -1,26 +1,28 @@
 /* ==UserStyle==
 @name           YouTube: Hide related videos
 @namespace      github.com/kerbrek/userstyles
-@version        1.0.1
+@version        1.0.2
 @homepageURL    https://github.com/kerbrek/userstyles
 @updateURL      https://raw.githubusercontent.com/kerbrek/userstyles/main/youtube-hide-related-videos.user.css
 @author         kerbrek
 @license        Unlicense
 ==/UserStyle== */
 
-/* Video Player on Youtube and across the Web */
+/* Video Player on YouTube and across the Web */
 @-moz-document url-prefix("https://www.youtube.com/watch"),
+               url-prefix("https://www.youtube.com/live/"),
                url-prefix("https://www.youtube.com/embed/"),
                url-prefix("https://www.youtube-nocookie.com/embed/") {
   .videowall-endscreen, .ytp-ce-element, .ytp-pause-overlay { display: none !important; }
 }
 
-/* Youtube Home page */
+/* YouTube Home page */
 @-moz-document url("https://www.youtube.com/") {
   ytd-browse[page-subtype=home] { display: none !important; }
 }
 
-/* Youtube Video page */
-@-moz-document url-prefix("https://www.youtube.com/watch") {
+/* YouTube Video page */
+@-moz-document url-prefix("https://www.youtube.com/watch"),
+               url-prefix("https://www.youtube.com/live/") {
   #related { display: none !important; }
 }
